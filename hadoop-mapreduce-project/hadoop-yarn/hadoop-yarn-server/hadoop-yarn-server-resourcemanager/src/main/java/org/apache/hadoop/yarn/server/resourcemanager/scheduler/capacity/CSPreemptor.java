@@ -273,7 +273,7 @@ public class CSPreemptor implements Runnable { // TODO: make this abstract, crea
       }
     }
     
-    // TODO: is there a better way?
+    // TODO: Make multi-level queues work. (Right now, only works for special case of single level of queues.)
     QueueMetrics metrics = root.getMetrics();
     int rootMB = 
       metrics.getAvailableMB() +
